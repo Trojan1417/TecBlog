@@ -1,0 +1,202 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TecBlog - O seu Blog de tecnologia</title>
+        <style>
+            /*Limpar formatações padrão*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #e6e6e6;
+}
+
+/*
+**** Layout *****
+*/
+#area-cabecalho {
+    background-color: #f7b600;
+    padding: 15px;
+    text-align: center;
+}
+#area-logo, #area-menu {
+    padding: 10px;
+}
+#area-principal {
+    padding: 15px;
+    width: 920px;
+    margin: 0 auto;
+}
+
+#area-postagens {
+    width: 660px;
+    float: left;
+}
+
+#area-lateral {
+    width: 240;
+    float: right;
+}
+
+#rodape {
+    text-align: center;
+    padding: 15px;
+    background: #ccc;
+    clear: both;
+}
+
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.conteudo-lateral {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.postagem-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+}
+/*
+**** Formatação do menu ****
+*/
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #f7b600;  
+}
+a:hover {
+   text-decoration: underline;
+   
+}
+
+ a:link, #area-cabecalho a:visited {
+    color: FFF;
+    padding: 8px 12px;
+    
+}
+
+#area-cabecalho a:hover {
+    color: #f7b600;
+    background: #fff;    
+    text-decoration: none;    
+}
+
+/*
+**** Formatações em geral ****
+*/
+h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #f7b600;
+}
+h3 {
+    background: #ccc;
+}
+
+.branco {
+    color: white;
+}
+
+.data-postagem {
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.postagem-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+}
+        </style>
+    </head>
+    <body>
+        
+        <div id="area-cabecalho">
+
+            <div id="area-logo">
+               <h1>Tec<span class="branco">Blog</span></h1>
+            </div>
+            <div id="area-menu">
+                <a href="index.html">Home</a> 
+                <a href="jogos.html">Jogos</a> 
+                <a href="celulares.html">Celulares</a> 
+                <a href="informatica.html">Informática</a> 
+                <a href="eletronicos.html">Eletrônicos</a>
+            </div>
+
+        </div>
+        <div id="area-principal">
+            <div id="area-postagens">
+                <!--Abertura de postagem-->
+                <div class="postagem">
+                    <h2>TItulo da postagem 1</h2>
+                    <span class="data-postagem">postado 20 de março 2022</span>
+                    <img  widht="620px" src="imagens/imagem1.jpg" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis expedita voluptas nisi culpa iste, laborum necessitatibus officia laboriosam ratione illum vel praesentium nobis debitis temporibus, quia ipsum provident, nam neque.
+                    </p>
+                    <a href="">Leia mais</a>
+                </div> <!--fechamento postagem-->
+
+                    <div class="postagem">
+                    <h2>TItulo da postagem 2</h2>
+                    <span class="data-postagem">postado 10 de março 2022</span>
+                    <img src="imagens/imagem2.jpg" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis expedita voluptas nisi culpa iste, laborum necessitatibus officia laboriosam ratione illum vel praesentium nobis debitis temporibus, quia ipsum provident, nam neque.
+                    </p>
+                    <a href="">Leia mais</a>
+
+                </div>
+            </div>
+            <div id="area-lateral">
+                
+                <div class="conteudo-lateral">
+                    <h3>Postagens recentes</h3>
+                  <div>
+                        <p class="postagem-lateral">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo dicta rem deserunt nesciunt, eos neque, eum inventore unde ipsum numquam odio exercitationem voluptate excepturi laboriosam recusandae in! Rerum, consequuntur?</p>
+                        <a href="">Leia mais</a>
+                    </div>
+                    
+                    <hr>
+
+                    <div >
+                        <p class="postagem-lateral">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo dicta rem deserunt nesciunt, eos neque, eum inventore unde ipsum numquam odio exercitationem voluptate excepturi laboriosam recusandae in! Rerum, consequuntur?</p>
+                        <a href="">Leia mais</a>
+                    </div>  
+                </div>
+
+                <div class="conteudo-lateral">
+                    <h3>Categorias</h3>
+
+                    <a href="">Jogos</a> <br>
+                    <a href="">Celulares</a> <br>
+                    <a href="">Informática</a> <br>
+                    <a href="">Eletrônicos</a> <br>
+                    <a href="">Jogos</a> <br>
+                    
+                </div>
+
+            </div>
+            <div id="rodape">
+                Todos os direitos reservados &copy;
+            </div>
+        </div>
+    </body>
+</html>
